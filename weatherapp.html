@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="searchBox">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            id="searchValue"
+            class="search"
+            required
+          />
+          <input type="submit" value="Search" class="button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div class="weather-information">
+            <h1>Paris</h1>
+            <p>
+              <span id="date" class="day"> Saturday</span>
+              <span id="hour">15</span>:<span id="minutes">32</span>, Sunny
+              <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temp">
+            <span class="icon">☀️</span>
+            <span class="temp"> 14</span>
+            <span class="degree">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Grace Wong</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
