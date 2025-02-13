@@ -28,14 +28,9 @@ minutes.innerHTML = `${timeMin}`;
 
 //Search and display the city name and temperature
 function displayTemperature(response) {
-  let dataCurrentTemp = response.data.temperature.current;
-  /*let temperature = Math.round(response.data.temperature.current);
-  let city = response.data.city;
-
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = `${city}`;
-  let temperatureElement = document.querySelector(".current-temperature-value");
-  temperatureElement.innerHTML = `${temperature}`;*/
+  let currentTemperature = document.querySelector("#current-temperature");
+  let dataCurrentTemp = Math.round(response.data.temperature.current);
+  currentTemperature.innerHTML = `${dataCurrentTemp}`;
 }
 
 function addCity(event) {
