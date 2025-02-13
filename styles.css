@@ -116,14 +116,14 @@ footer {
 
 .weather-information {
   position: relative;
-  left: -45px;
+  left: auto;
   bottom: 8px;
 }
 
 .current-temp {
   position: relative;
-  top: 35px;
-  right: -40px;
+  top: auto;
+  right: auto;
 }
 
 .temp {
