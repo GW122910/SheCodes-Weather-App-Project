@@ -31,6 +31,11 @@ function displayTemperature(response) {
   let currentTemperature = document.querySelector("#current-temperature");
   let dataCurrentTemp = Math.round(response.data.temperature.current);
   currentTemperature.innerHTML = `${dataCurrentTemp}`;
+
+  let dataUrl = response.data.condition.icon_url;
+  let dataUrlDescription = response.data.condition.description;
+  let currentTemperatureIcon = document.querySelector("#current-temp-icon");
+  currentTemperatureIcon.innerHTML = `<img src=${dataUrl} alt=${dataUrlDescription}>`;
 }
 
 function addCity(event) {
